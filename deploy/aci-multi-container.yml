@@ -47,7 +47,7 @@ properties:
   imageRegistryCredentials: 
     - server: acrgps4868.azurecr.io 
       username: tokenPull 
-      password: <tu-password> #al pasar a github actions lo ocultaremos. 
+      password: <tu-password> #al pasar a github actions lo ocultaremos. Prueba de que gitignore funciona edito el archivo
   ipAddress: 
     type: Public 
     ports: 
