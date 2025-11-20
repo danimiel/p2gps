@@ -43,10 +43,9 @@ jobs:
         run: | 
           cp src/Clients/build/libs/*.war deploy/docker/Clients/drop 
           docker build -t p2gps/web deploy/docker/Clients 
-          cp src/Backend/OrderService/build/libs/ordering* 
-          deploy/docker/Order/drop 
+          cp src/Backend/OrderService/build/libs/ordering* deploy/docker/Order/drop 
           docker build -t p2gps/order deploy/docker/Order 
-        ### LOGIN EN ACR ###
+      ### LOGIN EN ACR ###
       - name: Login to Azure Container Registry 
         uses: azure/docker-login@v1 
         with: 
